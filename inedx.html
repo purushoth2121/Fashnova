@@ -1,0 +1,198 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashnova</title>
+
+    <!--google form links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+    <!--my css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--font Awsome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        
+</head>
+
+<body>
+    <!--navigation bar-->
+    <nav class="navbar">
+        <h1>Fashnova</h1>
+        <div class="nav-links">
+            <p class="navbar-link"><a href="inedx.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collecions</a></p>
+            <p class="navbar-link"><a href="Contact.html">Contact</a></p>
+        </div>
+        <div class="nav-menu-toggle" onclick="shownav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+
+    <!--side navbar-->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closenav()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-nav-links">
+            <p class="side-navbar-link"><a href="inedx.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collecions</a></p>
+            <p class="side-navbar-link"><a href="Contact.html">Contact</a></p>
+        </div>
+
+
+        <!--side navbar button function-->
+        <script>
+            var sidenav = document.querySelector(".side-navbar")
+
+            function shownav() {
+                sidenav.style.left = "0"
+
+            }
+            function closenav() {
+                sidenav.style.left = "-60%"
+            }
+        </script>
+
+        <!--Heder section-->
+    </div>
+    <div class="header">
+        <div>
+            <h1>Level up Your style</h1>
+            <p>With our stunning Collections</p>
+            <button class="header-button">Shop Now</button>
+        </div>
+        <div>
+            <img class="header-img" src="/fashion.jpg" width="280px" height="280px">
+        </div>
+    </div>
+
+    <!--service section-->
+    <div class="service">
+        <div class="service-contain-1">
+            <div>
+                <h2>We Provide Best</h2>
+                <h2>Customer Experience</h2>
+            </div>
+            <div>
+                <p>|| we ensure that our cumtomer have the best shopping experience</p>
+            </div>
+        </div>
+
+        <div class="service-contain-2">
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <h4>We provide customer statisfication</h4>
+                <p>we ensure that our to have best shopping experience. treat customer good</p>
+            </div>
+
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <h4>New arrival ever day</h4>
+                <p>we ensure that our to have best shopping experience. treat customer good</p>
+            </div>
+
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <h4>Fast and Free shipping</h4>
+                <p>we ensure that our to have best shopping experience.treat customer good</p>
+            </div>
+        </div>
+    </div>
+
+    <!--new Arrival-->
+    <h2 style="padding: 20px;">New Arrival</h2>
+    <div class="new-arrival">
+
+        <div class="new-arrivarl-contain">
+            <img src="/fas16.avif" width="200px" height="180px">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="new-arrivarl-contain">
+            <img src="/fas19.avif" width="200px" height="180px">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="new-arrivarl-contain">
+            <img src="/fas20.avif" width="200px" height="180px">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="new-arrivarl-contain">
+            <img src="/fas4.webp" width="200px" height="180px">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+
+    <h2 style="padding: 20px;">Most wanted</h2>
+    <!--most Wanted-->
+    <div class="most-wanted">
+        <div class="new-arrival">
+
+            <div class="new-arrivarl-contain">
+                <img src="/fashion.jpg" width="200px" height="180px">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="new-arrivarl-contain">
+                <img src="/fas21.webp" width="200px" height="180px">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="new-arrivarl-contain">
+                <img src="/fas17.avif" width="200px" height="180px">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="new-arrivarl-contain">
+                <img src="/fas13.avif" width="200px" height="180px">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--news-->
+    <div class="news">
+        <h2>Join Our News Letter</h2>
+        <p>Signup for uor  Email NewsLetter to get Exclusive disscounts nd updates and more</p>
+        <div>
+            <input type="text" class="search">
+        </div>
+        <button>Subscribe</button>
+
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="headingtext">Fashnova</h2>
+                <p>@2025 FASHNOVA. Designed and Developed by Purushothaman</p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color: #ffff;"></i>
+                    <i class="fa-brands fa-whatsapp" style="color: #ffff;"></i>
+                    <i class="fa-brands fa-youtube" style="color: #ffff;"></i>
+                </div>
+            </div>
+
+        </div>
+        <p>@purushoth20255.com</p>
+    </div>
+<script src="collection.js"></script>
+</body>
+
+</html>

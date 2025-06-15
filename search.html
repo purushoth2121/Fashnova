@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" onkeyup="search(event)">
+    <div>
+        <h1>one</h1>
+        <h1>two</h1>
+        <h1>three</h1>
+        <h1>four</h1>
+        <h1>five</h1>
+        <h1>six</h1>
+    </div>
+    <script>
+        
+        var element = document.querySelectorAll("h1")
+        var container = document.querySelector("div")
+        var enteredtext = ""
+
+        function search(event) {
+            enteredtext = event.target.value.toUpperCase()
+
+            for ( var i = 0; i < element.length; i++) {
+
+                if (element[i].textContent.toUpperCase().indexOf(enteredtext) < 0) {
+                    element[i].style.display = "none"
+                }
+                else {
+                    element[i].style.display = "block"
+                }
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

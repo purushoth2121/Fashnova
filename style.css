@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+}
+
+.nav-links {
+    display: flex;
+    column-gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1d2d3c;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #1d2d3c;
+
+}
+
+.nav-menu-toggle {
+    display: none;
+}
+
+/* side navbar*/
+.side-navbar {
+    background-color: #1d2d3c;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 1s;
+}
+
+.side-navbar-link {
+    margin-bottom: 30px;
+}
+
+.side-nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-nav-links a:hover {
+    text-decoration: underline;
+}
+
+/*header*/
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+
+}
+
+.header-button {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.service {
+    padding: 20px;
+}
+
+.service-contain-1 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.service-contain-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-contain-2 div {
+    background-color: #f2f4f7;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.new-arrival {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.new-arrivarl-contain {
+    position: relative;
+    flex-basis: 20%;
+    padding-left: 20px;
+}
+
+.new-arrivarl-contain button {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-top: 10%;
+    background: #f2f4f7;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    border-radius: 10px;
+
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px
+}
+
+.news input {
+    padding: 10px;
+    width: 80vw;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: solid black 3px;
+}
+
+.news button {
+    margin-top: 10px;
+    color: #f2f4f7;
+    background-color: #1D232c;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.footer {
+    margin-top: 21px;
+    padding: 40px;
+    background-color: #1d232c;
+    color: white;
+
+}
+
+/* product section --- collection*/
+.product-section {
+    margin-top: 20px;
+}
+
+.product-search {
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.product-search input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.product-search input:focus {
+    outline: none;
+}
+
+.product{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.product-box {
+    text-align: center;
+    flex-basis: 20%;
+    border: 20px;
+    border-bottom: 10px;
+}
+
+.product-box img {
+    border-radius: 10px;
+}
+
+/* Contact section*/
+
+.conact {
+    background-color: black;
+    border:none;
+    color: white;
+    width: 80%;
+    height: 500px;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.contact-section {
+    margin-top: 20px;
+    padding: 20px;
+
+}
+.contact-section h2{
+    margin-bottom: 20px;
+}
+
+.name-box input{
+    border: none;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+}
+
+.message-box input {
+
+    border: none;
+    padding: 10px;
+    width: 100%;
+    height: 110px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+}
+
+.submit-btn button {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
+
+/* media querry*/
+@media screen and (max-width:600px) {
+    .nav-menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .service-contain-1 {
+        display: none;
+    }
+
+    .service-contain-2 {
+        flex-direction: column;
+    }
+}
